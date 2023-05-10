@@ -1,0 +1,404 @@
+/* Volunteer Page */
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+input, select{
+    color: #393939;
+}
+
+.header-outer-container {
+    width: calc(100vw - 40px);
+    border-bottom: solid 1px #DDDDDD;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 109px;
+}
+
+.header-logo{
+    height: 68px;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.brand-logo{
+    height: 100%;
+}
+
+.site-footer{
+    padding: 45px 20px 50px 20px;
+    width: calc(100vw - 40px);
+    background-color: black;
+}
+
+.footer-link-cont{
+    color: white;
+    font-family: sans-serif;
+}
+
+.footer-link{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.main-page{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    min-height: calc(100vh - 373px);
+    background-color: #f7fbff;
+}
+
+.main-page-header{
+    font-family: sans-serif;
+    color: #393939;
+    max-width: 80%;
+    text-align: center;
+}
+
+.main-page-description{
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #393939;
+    max-width: 80%;
+    text-align: center;
+}
+
+.seperation-line{
+    border: 1px solid #2e3d4e17;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main-page-form-container{
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Volunteer Form */
+
+.form{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #393939;
+}
+
+.form-control, .volunteer{
+    position: relative;
+    display: grid;
+    width: 80%;
+    gap: 5px;
+}
+
+.form-control i{
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    display: none;
+}
+
+.form-control small{
+    display: none;
+}
+
+.form-control.error input{
+    border: 1px solid #e74c3c;
+}
+
+.form-control.error i, .form-control.error small{
+    display: block;
+    color: #e74c3c;
+}
+
+.input-first, .input-last, .select, .small-btn, .large-btn, .sec-small-btn{
+    font-size: 0.95rem;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: white;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.input-first, .input-last{
+    padding: 8px;
+}
+
+.select{
+    padding: 8px 4px;
+}
+
+input::placeholder{
+    text-transform: none;
+}
+
+.select, .small-btn, .large-btn, .sec-small-btn{
+    cursor: pointer;
+}
+
+.small-btn, .large-btn, .sec-small-btn{ 
+    border: none;
+    margin: 5px 0;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    border: 1px solid #0063b7;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.small-btn, .large-btn{
+    background-color: #0063b7;
+    color: white;
+}
+
+.large-btn{
+    width: 80%;
+}
+
+.sec-small-btn{
+    background-color: transparent;
+    color: #0063b7;
+}
+
+.input-first:hover, .input-last:hover, .select:hover{
+    background-color: #f8f8f8;
+}
+
+.input-first:focus, .input-last:focus, .select:focus{
+    background-color: white;
+    border: 1px solid #0063b7;
+    outline: none;
+}
+
+.small-btn:hover, .large-btn:hover{
+    background-color: #0980e9;
+    border: 1px solid #0980e9;
+}
+
+.sec-small-btn:hover{
+    border-color: #0980e9;
+    color: #0980e9;
+    background-color: #eef7ff;
+}
+
+
+/* Success Page */
+
+.success-message{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.success-title, .success-des{
+    margin: 0;
+}
+
+.success-title{
+    color: #393939;
+}
+
+.success-des{
+    width: 500px;
+    margin-bottom: 10px;
+    color: #5e5e5e;
+    line-height: 1.5rem;
+}
+
+.success-btn{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 0;
+}
+
+
+/* Invoice Page */
+
+.invoice-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invoice-form{
+    margin: 30px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: #393939;
+}
+
+.invoice-form-control, .invoice-volunteer-con, .invoice-date-con{
+    width: 348px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.invoice-form-label{
+    display: flex;
+}
+
+.invoice-form-label label{
+    width: 130px;
+}
+
+.invoice-form-control i{
+    position: absolute;
+    top: 4px;
+    right: 9px;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.invoice-form-control small{
+    position: absolute;
+    left: 140px;
+    bottom: -16px;
+    color: #e74c3c;
+    visibility: hidden;
+    width: max-content;
+}
+
+.invoice-form-control.error input{
+    border: 1px solid #e74c3c;
+}
+
+.invoice-form-control.error i, .invoice-form-control.error small{
+    visibility: visible;
+}
+
+.invoice-first, .invoice-last, .invoice-select, .invoice-date, .newSelect{
+    font-size: 1rem;
+    padding: 2px 4px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.newSelect{
+    width: 199px;
+    padding: 2px 0;
+}
+
+.invoice-btn{
+    display: flex;
+    margin: 10px 0 0;
+    gap: 10px;
+}
+
+.invoice-first:focus, .invoice-last:focus, .invoice-select:focus, .newSelect:focus{
+    padding: 2px 4px;
+    outline: none;
+    border: 1px solid #0063b7;
+}
+
+.newSelect:focus{
+    padding: 2px 0;
+}
+
+input:read-only:focus{
+    border: none;
+}
+
+.save-success-message-con{
+    width: 343px;
+}
+
+.save-success-message{
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #2ecc7011;
+    color: #2ecc71;
+    text-align: center;
+    padding: 4px 8px;
+    border: 1px solid #2ecc704f;
+    border-radius: 3px;
+    display: none;
+}
+
+
+/* Mobile Screen */
+
+@media (max-width: 475px) {
+    .main-page-header{
+        font-size: 28px;
+    }
+    .success-des{
+        width: 100%;
+    }
+    .save-success-message-con{
+        margin: 0 30px;
+        width: 300px;
+    }
+    .invoice-form{
+        width: 80%;
+        gap: 48px;
+    }
+    .invoice-form-control, .invoice-volunteer-con, .invoice-date-con {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .invoice-form-control i{
+        top: 27px;
+    }
+    .invoice-form-control small{
+        left: 0;
+        bottom: -40px;
+    }
+    .invoice-form-label label {
+        width: fit-content;
+        padding-right: 5px;
+    }
+    .invoice-first, .invoice-last, .invoice-select, .invoice-date, .newSelect {
+        padding: 2px 0;
+    }
+    .invoice-btn{
+        justify-content: center;
+    }
+    .small-btn, .large-btn, .sec-small-btn{
+        font-size: 14px;
+    }
+}

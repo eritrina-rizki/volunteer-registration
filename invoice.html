@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Invoice &#8211; Moreton Bay Regional Council &#8211; Save the Bay</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="site-header" class="site-header dynamic-header" role="banner">
+        <div class="header-outer-container">
+          <div class="header-logo">
+            <img src="https://cdn.theforage.com/vinternships/companyassets/2t4QruSmKkrN8jr7G/fPw4NBBXFNyuxHnwf/1656532130894/moreton colour logo.png" class="brand-logo" alt="Moreton Bay Regional Council logo">
+          </div>
+          
+          <div class=header-sign-in>
+            <button class="small-btn">Sign In</button>
+          </div>
+        </div>
+    </header>
+    <main id="content" class="site-main post-3 page type-page status-publish hentry" role="main">
+      <div class="main-page">
+        <h1 class="main-page-header">Volunteer Registration Invoice</h1>
+        <div class="invoice-container">
+          <div class="save-success-message-con">
+            <p id="save-success-message" class="save-success-message">Data saved!</p>
+          </div>
+          <form class="invoice-form">
+            <div class="invoice-form-control">
+              <div class="invoice-form-label">
+                <label for="first-name">First name</label>: 
+              </div>
+              <input type="text" id="invoice-first" class="invoice-first" name="newFirst" placeholder="e.g. John" autocomplete="off" readonly>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="invoice-form-control">
+              <div class="invoice-form-label">
+                <label for="last-name">Last name</label>: 
+              </div>
+              <input type="text" id="invoice-last" class="invoice-last" name="newLast" placeholder="e.g. Doe" autocomplete="off" readonly>
+              <i class="fa fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="invoice-volunteer-con">
+              <div class="invoice-form-label">
+                <label for="volunteer">Volunteer group</label>: 
+              </div>
+              <input type="text" id="invoice-select" class="invoice-select" name="newSelect" readonly>
+              <select id="select" class="newSelect" name="newSelect" required hidden>
+                <option id="option" value="General">General</option>
+                <option id="option" value="Food & Drinks">Food & Drinks</option>
+                <option id="option" value="Security">Security</option>
+                <option id="option" value="Medical">Medical</option>
+              </select>
+            </div>
+            <div class="invoice-date-con">
+              <div class="invoice-form-label">
+                <label for="date">Registration date</label>: 
+              </div>
+              <input type="text" id="invoice-date" class="invoice-date" readonly>
+            </div>
+            <div class="invoice-btn">
+              <a type="button" id="edit-btn"  class="sec-small-btn">Edit data</a>
+              <a type="button" id="back-btn" class="small-btn" href="./index.html">Back to Volunteer Page</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright" role="contentinfo">
+      <div class="footer-link-cont">
+        <a class="footer-link">Terms &amp; conditions</a>&nbsp;| 
+        <a class="footer-link">Privacy</a>&nbsp;| 
+        <a class="footer-link">Right to Information</a>&nbsp;| 
+        <a class="footer-link">Accessibility</a>
+      </div>
+    </footer>
+</body>
+<script src="./js/invoice.js"></script>
+</html>
