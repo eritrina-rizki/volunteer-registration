@@ -1,6 +1,8 @@
 # volunteer-registration
 Volunteer registration page as part of Forage and Moreton Bay Regional Council 'Enterpreneurship &amp; Innovation:  Web Development' virtual work experience program.
 <br><br>
+Github page: https://eritrina-rizki.github.io/volunteer-registration
+<hr>
 This project is about creating a form, with HTML and CSS, in volunteer registration page for the client, Save the Bay, that enable visitors to register their interest in volunteering with the organization. For practice my coding skill, I added a form validation with JavaScript and store the submitted data to Session Storage in browser, also added an edit button to allow visitors editing their registration data after submitting the form.
 <br><br>
 This is the preview of the volunteer registration page:
